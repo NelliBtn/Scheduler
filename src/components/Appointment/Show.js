@@ -1,12 +1,6 @@
 import React from "react";
 
 export default function Show(props) {
-  /*
-  student:string
-  interviewer: object
-  onEdit: function
-  onDelete: function
-  */ 
 
   return(
     <main className="appointment__card appointment__card--show">
