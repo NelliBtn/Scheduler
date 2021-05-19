@@ -2,11 +2,6 @@ import React from "react";
 
 export default function Error(props) {
 
-/*
-message: string
-onClose: function
-*/
-
   return(
     <main className="appointment__card appointment__card--error">
       <section className="appointment__error-message">
@@ -20,5 +15,5 @@ onClose: function
         onClick={props.onClose}
       />
     </main>
-  )
-}
+  );
+};

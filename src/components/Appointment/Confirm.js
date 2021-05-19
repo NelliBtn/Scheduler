@@ -1,12 +1,6 @@
 import React from "react";
 import Button from "components/Button";
 
-/*
-message: string
-onConfirm: function
-onCancel: function
-*/
-
 export default function Confirm(props) {
 
   return(
@@ -17,5 +11,5 @@ export default function Confirm(props) {
         <Button onClick={() => props.onConfirm(props.id)} danger>Confirm</Button>
       </section>
     </main>
-  )
-}
+  );
+};

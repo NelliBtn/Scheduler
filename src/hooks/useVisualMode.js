@@ -12,15 +12,15 @@ import { useState } from 'react';
       setHistory((prev) => [...prev.slice(0, -1), newMode])
     } else {
       setHistory((prev) => [...prev, newMode]);
-    }
-  }
+    };
+  };
 
    function back() {
      if (history.length > 1) {
        setHistory((prev) => [...prev.slice(0, -1)]);
        return setMode(history[history.length - 2 ]);
-     }
-   }
+     };
+   };
 
   return { mode, transition, back };
-}
+};

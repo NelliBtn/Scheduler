@@ -1,10 +1,5 @@
-/* Group components to organize them, 
-and use index.js as the default module for a folder.
-*/
 import React from 'react'
-// import styles once, it will be available to all the children
 import "components/Appointment/styles.scss";
-
 import Header from "components/Appointment/Header";
 import Empty from "components/Appointment/Empty";
 import Status from "components/Appointment/Status"
@@ -29,15 +24,15 @@ export default function Appointment(props) {
       .catch((err) => {
         transition(ERROR_SAVE, true)
       })
-  }
+  };
 
   function edit() {
     transition(EDIT);
-  }
+  };
 
   function deleteAppt() {
     transition(CONFIRM);
-  }
+  };
 
   function confirm(id) {
     transition(DELETING, true);
@@ -48,7 +43,7 @@ export default function Appointment(props) {
     .catch((err) => {
       transition(ERROR_DELETE, true)
     })
-  }
+  };
 
   const EMPTY = "EMPTY";
   const SHOW = "SHOW";
@@ -103,5 +98,5 @@ export default function Appointment(props) {
       />
       }
     </article>
-  )
-} 
+  );
+};
