@@ -16,13 +16,14 @@ const getAppointmentsForDay = function(state, day) {
 const getInterviewersForDay = function(state, day) {
   const result = [];
   const filteredDay = state.days.find(apptDay => apptDay.name === day);
+
   if (!filteredDay) {
     return result;
   }
-  for (let id of filteredDay.appointments) {
-    if (state.appointments[id].interview) {
-      const interviewerId = state.appointments[id].interview.interviewer;
-      result.push(state.interviewers[interviewerId]);
+  
+  for (let id of filteredDay.interviewers) {
+    if (state.interviewers[id]) {
+      result.push(state.interviewers[id]);
     }
   }
   return result;
