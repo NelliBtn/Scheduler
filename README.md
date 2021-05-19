@@ -8,8 +8,8 @@ When the application is loaded a request is made to the API server. The appointm
 When the responses returned from the server the status indicator is hidden and the interview is shown with the updated data. The user can edit an interview. This allows them to change the student name or chosen interviewer and save those changes to the server. If an interview is no longer needed then it can be deleted. Before deleting the interview the app confirms with the user. If the server returns an error when performing an operation the Scheduler shows the user an error message. The message can be dismissed by pressing the close button provided.
 
 ## Final Product
-!["Screenshot of show mode"](https://github.com/NelliBtn/Scheduler/blob/master/screenshots/Screen%20Shot%202021-05-19%20at%203.59.11%20PM.png?raw=true)
-!["Screenshot of create/delete/edit modes"](https://github.com/NelliBtn/Scheduler/blob/master/screenshots/Screen%20Shot%202021-05-19%20at%204.00.16%20PM.png?raw=true)
+!["Screenshot of show mode"](https://github.com/NelliBtn/Scheduler/blob/master/docs/show-mode.png?raw=true)
+!["Screenshot of create/delete/edit modes"](https://github.com/NelliBtn/Scheduler/blob/master/docs/create-delete-edit-modes.png?raw=true)
 
 
 ## Dependencies
