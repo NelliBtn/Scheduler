@@ -11,12 +11,12 @@ When the responses returned from the server the status indicator is hidden and t
 
 
 ## Dependencies
--NodeJS
--React
--Webpack
--Babel
--Axios
--Storybook, Webpack Dev Server, Jest, Testing Library
+- NodeJS
+- React
+- Webpack
+- Babel
+- Axios
+- Storybook, Webpack Dev Server, Jest, Testing Library
 
 
 ## Setup
